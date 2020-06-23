@@ -7,8 +7,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["carlosl@sfu.ca"]
 
   spec.summary       = %q{Oktopus documention.}
-  spec.homepage      = "https://github.com/pmarsceill/just-the-docs"
-  spec.license       = "MIT"
+  spec.homepage      = "https://github.com/charlee593/oktopus_doc"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|bin|_layouts|_includes|lib|Rakefile|_sass|LICENSE|README)}i) }
   spec.executables   << 'oktopus'
@@ -17,4 +16,6 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll", ">= 3.8", "< 4.1.0"
   spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.0"
   spec.add_runtime_dependency "rake", ">= 12.3.1", "< 13.1.0"
+  spec.add_runtime_dependency 'jekyll-environment-variables'
+  spec.add_runtime_dependency "github-pages"
 end
