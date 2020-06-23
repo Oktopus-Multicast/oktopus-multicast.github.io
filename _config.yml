@@ -57,16 +57,10 @@ footer_content: "Copyright &copy; 2020 Carlos Lee. Distributed by an <a href=\"h
 # Color scheme currently only supports "dark" or nil (default)
 color_scheme: nil
 
-# collections:
-#   services:
-#     output: true
-#     permalink: /services/:path/
-#   team:
-#     output: true
-#     permalink: /team/:path/
-#   testimonials:
-#     output: true
-#     permalink: /testimonials/:path/
+collections:
+  team:
+    output: true
+    permalink: /team/:path/
 
 defaults:
   - scope:
