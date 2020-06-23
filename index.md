@@ -24,7 +24,7 @@ nav_exclude: true
       </div>
     </div>
     <div class="call-box-bottom">
-      <a href="{{site.baseurl}}/contact" class="button">Contact</a>
+      <a href="{{ site.baseurl }}{{site.baseurl}}/contact" class="button">Contact</a>
     </div>
   </div>
 </div>

@@ -5,8 +5,8 @@
         <div class="footer">
           <h3 class="footer-title">{{site.title}}</h3>
           <ul class="footer-menu">
-            <li><a href="{{site.url}}/">Home</a></li>
-            <li><a href="{{site.url}}/contact">Contact</a></li>
+            <li><a href="{{ site.url }}{{ site.baseurl }}">Home</a></li>
+            <li><a href="{{ site.url }}{{ site.baseurl }}/contact">Contact</a></li>
             <li class="copyright">© {{site.title}} {{site.time | date:'%Y'}}</li>
           </ul>
         </div>
