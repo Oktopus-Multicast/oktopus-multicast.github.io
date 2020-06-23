@@ -23,3 +23,17 @@
     text-decoration: none;
   }
 }
+
+.button.red {
+  background: red;
+  &:hover {
+    background-color: lighten(red, 10%);
+  }
+}
+
+.button.grey {
+  background: gray;
+  &:hover {
+    background-color: lighten(gray, 10%);
+  }
+}
