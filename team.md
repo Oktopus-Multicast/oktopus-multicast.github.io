@@ -29,7 +29,7 @@ nav_exclude: true
           <img
             alt="{{ team.title }} logo"
             class="img-fluid mb-2"
-            src="{{site.baseurl}}{{ team.image }}"
+            src="{{site.url}}{{ team.image }}"
           />
         </div>
         {% endif %}

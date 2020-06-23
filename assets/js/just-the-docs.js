@@ -295,8 +295,9 @@ jtd.onReady(function(){
     if (typeof lunr !== 'undefined') {
       initSearch();
     }
+    {% include js/custom.js %}
   }
-  {% include js/custom.js %}
+
 });
 
 })(window.jtd = window.jtd || {});
