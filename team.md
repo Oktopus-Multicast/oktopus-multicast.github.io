@@ -3,6 +3,7 @@ title: Team
 layout: default
 bodyClass: page-team-list
 nav_exclude: true
+permalink: /team
 ---
 
 <div class="intro">
