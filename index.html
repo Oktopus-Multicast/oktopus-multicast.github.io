@@ -8,12 +8,12 @@ nav_exclude: true
 
 <div class="intro pb-4">
   <div class="container">
-    <h1>{{site.title}} - Control Plane Framework.</h1>
+    <h1>{{site.title}} - A Control Plane Framework.</h1>
     <p>{{site.title}} simplifies the process of designing a multicast application. It focus on what the network operator needs, and not on how to calculate the results.</p>
   </div>
 </div>
 
-<div class="container pt-2">
+<div class="container pt-2 ">
   <div class="call">
     <div class="call-box-top">
       <a href="" class="button red">Paper</a>
@@ -21,9 +21,73 @@ nav_exclude: true
     <div class="call-box-top">
       <a href="" class="button grey">Source Code</a>
     </div>
-    <div class="call-box-bottom">
+    <div class="call-box-top">
       <a href="mailto:{{ site.data.contact.email }}" class="button">Contact</a>
     </div>
+  </div>
+</div>
+
+<div class="container pt-5 pb-5 pt-md-7 pb-md-7">
+  <div class="row justify-content-center">
+    <div class="col-12">
+      <h2 class="title-3 text-dark mb-4">What is {{site.title}}?</h2>
+    </div>
+    <div class="container row justify-content-center md-4">
+        <!-- <div class="col-12 col-md-6 mb-1"> -->
+
+              <p>
+                Every multicast session has a source transmitting traffic, and destinations receiving this traffic. A multicast graph spans the routers of the source and destinations inside the provider network. With the existence of multiple (conflicting) multicast requirements and objectives, it is becoming complex and error-prone task for the network operator to calculate multicast graphs (the control plane) and configure the network devices (the data plane).
+              </p>
+              <p>
+                {{site.title}} isolates what goals the network provider needs to achieve, from how these goals are actually realized. The network operator writes their objectives in a high-level programming language, and {{site.title}} automatically translates these objectives to data plane configurations such as populating router rules or attaching labels to packets. {{site.title}} has two main components:
+              </p>
+
+        <!-- </div> -->
+
+    </div>
+
+    <div class="container row justify-content-center">
+      <div class="col-12 col-md-6 mb-1">
+            <h3 class="title-5">{{site.title}} APIs</h3>
+            <p>
+              The {{site.title}} APIs provide a set of high-level interfaces to developers and network operators to define their applications. 
+            </p>
+          
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;padding:.2em .6em;font-size:85%;"><pre style="margin: 0; line-height: 125%">app = App(topo_path)
+  <span style="color: #008800; font-style: italic"># Session APIs: session requirements</span>
+  s = Session(addr, src, dsts, bw)
+  s.traverse([<span style="color: #0000FF">&#39;fw&#39;</span>, <span style="color: #0000FF">&#39;ids&#39;</span>]) <span style="color: #008800; font-style: italic"># service chaining </span>
+  <span style="color: #008800; font-style: italic"># Routing APIs: routing obj. and link constraints</span>
+  r = Routing()
+  <span style="color: #000080; font-weight: bold">for</span> link <span style="font-weight: bold">in</span> app.getLinks():
+      r.addLinkCapConstraint(link, <span style="color: #0000FF">&#39;bps&#39;</span>, <span style="color: #0000FF">1e9</span>)
+  r.addObjective(<span style="color: #0000FF">&#39;minRoutingCost&#39;</span>)
+  <span style="color: #008800; font-style: italic"># App APIs: available resources and services</span>
+  app.addSessions(s); app.setRoutes(r) 
+  app.setAlgorithm(<span style="color: #0000FF">&#39;oktopus&#39;</span>) <span style="color: #008800; font-style: italic"># or other algorithms</span>
+  app.solve() <span style="color: #008800; font-style: italic"># produces a solution</span>
+  </pre></div>
+  
+
+
+      </div>
+
+      <div class="col-12 col-md-6 mb-1">
+        <h3 class="title-5">Optimization engine</h3>
+        <p>
+          The optimization engine receives these inputs from the APIs, and runs the {{site.title}} algorithm to compute the multicast graphs. 
+        </p>
+        <img alt="Service chaining example." class="intro-fig" src="{{site.url}}{{site.baseurl}}/assets/images/service_chain.svg" /></div>
+
+
+  </div>
+
+  </div>
+
+
+
+
+    
   </div>
 </div>
 

@@ -37,3 +37,18 @@
     display: block;
   }
 }
+.title-5 {
+  font-family: $font-family-base;
+  font-weight: light;
+  color: #1c3ed3;
+  font-size: 1.6rem;
+  @include media-breakpoint-up(sm) {
+    font-size: 2rem;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 2.4rem;
+  }
+  a {
+    display: block;
+  }
+}
