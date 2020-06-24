@@ -1,6 +1,6 @@
 [
   {
-    "title": "Intuitive",
+    "title": "Expressive",
     "description": "Oktopus API is simple to use. The design of the API specifically tailored to the network application needs. It allows the operator to focus on expressing the application's goals rather than designing complex algorithms."
   },
   {
@@ -17,6 +17,6 @@
   },
   {
     "title": "Scalable",
-    "description": "Oktopus outperforms the closest algorithm in the literature in terms of the number of allocated multicast sessions by up to 37%. Moreover, Oktopus computes the multicast graphs multiple orders of magnitude faster than linear programming software. "
+    "description": "Oktopus outperforms the closest algorithm in the literature in terms of the number of allocated multicast sessions by up to 37%. Moreover, Oktopus computes the multicast graphs multiple orders of magnitude faster than commercial linear programming software such as CPLEX."
   }
 ]

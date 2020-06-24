@@ -84,11 +84,34 @@ nav_exclude: true
   </div>
 
   </div>
+  </div>
+</div>
+
+<div class="container pt-5">
+  <div class="row justify-content-center">
+    <div class="col-12">
+      <h2 class="title-3 text-dark mb-4">{{site.title}} Algorithm</h2>
+    </div>
+    <div class="container row justify-content-center">
+      <div class="col-12 col-md-6 mb-1">
+            <p>
+              The {{site.title}} algorithm runs at the control plane of the ISP network to calculate the multicast distribution graph for a given session. {{site.title}} algorithm aims at minimizing the routing cost for each multicast session. {{site.title}} consists of two steps. The first one generates a set of network segments for the ISP network, and the second step uses these segments to efficiently calculate the multicast distribution graph. {{site.title}} algorithm has a fine-grained control over the selection of links in the distribution graphs, which leads to significant improvements in the quality of the calculated graphs. Specifically, {{site.title}} algorithm increases the number of allocated sessions because it can reach ISP locations that have the required services, and thus includes them in the calculated graph. Moreover, {{site.title}} algorithm can reduce the routing cost per session as it carefully chooses links belonging to the graph.
+            </p>
+            <p>
+              The figure shows {{site.title}} allocates 30% more sessions compare to the state of the art algorithm (MSA) on Dfn network topology.
+            </p>
+      </div>
+
+      <div class="col-12 col-md-6 mb-1">
+
+        <img alt="Oktopus vs MSA." class="intro-fig" src="{{site.url}}{{site.baseurl}}/assets/images/Dfn_allc_sess_4000_variable_025_vary_100_1_variable.svg" /></div>
+          
+
+      </div>
+
+  </div>
 
 
-
-
-    
   </div>
 </div>
 
