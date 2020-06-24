@@ -1,17 +1,22 @@
 [
   {
-    "title": "Free Consultation",
-    "description": "New clients recieve an obligation free consultation.",
-    "image": "images/features/noun_branding_1885335.svg"
+    "title": "Intuitive",
+    "description": "Oktopus API is simple to use. The design of the API specifically tailored to the network application needs. It allows the operator to focus on expressing the application's goals rather than designing complex algorithms."
   },
   {
-    "title": "Certified Accountants",
-    "description": "All members of our team are certified accountants.",
-    "image": "images/features/noun_The Process_1885341.svg"
+    "title": "General",
+    "description": "Oktopus framework is highly configurable. It allows the user to custom defines the network properties to match the application needs."
   },
   {
-    "title": "Tax Compliance",
-    "description": "We stay up to date on the latest changes to the tax code.",
-    "image": "images/features/noun_3d modeling_1885342.svg"
+    "title": "Multicast",
+    "description": "Oktopus supports many multicast traffic engineering applications objectives, such as minimizing the routing, minimizing the maximum link load, etc."
+  },
+  {
+    "title": "Service Chaining",
+    "description": "Oktopus provides an efficient heuristic algorithm to solve multicast service chaining applications."
+  },
+  {
+    "title": "Scalable",
+    "description": "Oktopus outperforms the closest algorithm in the literature in terms of the number of allocated multicast sessions by up to 37%. Moreover, Oktopus computes the multicast graphs multiple orders of magnitude faster than linear programming software. "
   }
 ]
