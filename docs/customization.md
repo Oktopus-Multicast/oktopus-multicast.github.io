@@ -1,7 +1,7 @@
 ---
 layout: doc
 title: Customization
-nav_order: 6
+nav_order: 60
 ---
 
 # Customization

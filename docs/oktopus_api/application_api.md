@@ -7,7 +7,7 @@ nav_order: 1
 
 # Application API
 
-The Application API allows the operator to control different aspects of an application such as topology, services, session, routing, and solution. 
+The Application API allows the operator to control different aspects of an application such as topology, services, session, routing, and solution.
 
 ```python
 add_sessions(sessions)
@@ -47,7 +47,7 @@ Get network given the connected network nodes.
 * **Return type**
 
     Link
-
+{: .pb-2}
 
 ```python
 get_links()
@@ -65,7 +65,7 @@ Get network links.
 * **Return type**
 
     Link
-
+{: .pb-2}
 
 ```python
 get_node(node_id)
@@ -89,7 +89,7 @@ Get network node object give the ID.
 * **Return type**
 
     Node
-
+{: .pb-2}
 
 ```python
 get_nodes()
@@ -107,7 +107,7 @@ Get network nodes.
 * **Return type**
 
     Node
-
+{: .pb-2}
 
 ```python
 get_nodes_by_service(srv_name)
@@ -131,7 +131,7 @@ Get network nodes containing the given network service.
 * **Return type**
 
     list
-
+{: .pb-2}
 
 ```python
 get_nodes_ids_by_service(srv_name)
@@ -155,7 +155,7 @@ Get network nodes IDs containing the given network service.
 * **Return type**
 
     list
-
+{: .pb-2}
 
 ```python
 get_session(addr)
@@ -179,7 +179,7 @@ Get an application session given the session address.
 * **Return type**
 
     Session
-
+{: .pb-2}
 
 ```python
 get_sessions()
@@ -193,12 +193,14 @@ Get application sessions.
 
 * **Return type**
     list
+{: .pb-2}
 
 ```python
 print_services()
 ```
 
 Print network services deployed on the network.
+{: .pb-2}
 
 ```python
 set_routes(routes)
@@ -212,7 +214,7 @@ The Routing object is used to define routing costs, constraints and objectives o
 * **Parameters**
 
     * **routes** (*Routing*) – The Routing object.
-
+{: .pb-2}
 
 ```python
 solve(algorithm='oktopus', **kwargs)

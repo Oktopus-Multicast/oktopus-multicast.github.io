@@ -1,7 +1,7 @@
 ---
 layout: doc
 title: Overview
-description: "Just the Docs is a responsive Jekyll theme with built-in search that is easily customizable and hosted on GitHub Pages."
+description: "Overview of Oktopus."
 nav_order: 1
 permalink: /docs/overview
 ---
@@ -80,7 +80,7 @@ app.solve() # produces a solution
 An example using the Application API.
 {: .text-center .pb-2}
 
-[Head over Application API section for more detail](another-page).
+[Head over Application API section for more detail]({{ site.baseurl }}{% link docs/oktopus_api/application_api.md %}).
 {: .pb-4 }
 
 #### **Session API**
@@ -154,5 +154,5 @@ An example using the Routing API.
 
 ---
 
-[Next Page](http://example.com/){: .btn .btn-outline .btn-right}
+[Getting Started]({{ site.baseurl }}{% link docs/getting_started.md %}){: .btn .btn-outline .btn-right}
 {: .pb-4 }

@@ -2,7 +2,7 @@
 layout: doc
 title: Overview2
 description: "Just the Docs is a responsive Jekyll theme with built-in search that is easily customizable and hosted on GitHub Pages."
-nav_order: 2
+nav_order: 20
 permalink: /docs/overview2
 ---
 
