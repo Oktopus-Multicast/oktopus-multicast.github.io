@@ -8,6 +8,7 @@ nav_order: 1
 # Application API
 
 The Application API allows the operator to control different aspects of an application such as topology, services, session, routing, and solution.
+{: .pb-2}
 
 ```python
 add_sessions(sessions)

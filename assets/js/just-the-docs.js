@@ -279,10 +279,10 @@ function initSearch() {
   }
 }
 
-// function pageFocus() {
-//   var mainContent = document.querySelector('.js-main-content');
-//   mainContent.focus();
-// }
+function pageFocus() {
+  var mainContent = document.querySelector('.js-main-content');
+  mainContent.focus();
+}
 
 
 // Document ready

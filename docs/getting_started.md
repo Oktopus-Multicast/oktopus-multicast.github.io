@@ -19,5 +19,5 @@ This page guide to start working with Oktopus.
 
 ---
 
-[Next Page](http://example.com/){: .btn .btn-outline .btn-right}
+[Oktopus API]({{ site.baseurl }}{% link docs/oktopus_api/oktopus_api.md %}){: .btn .btn-outline .btn-right}
 {: .pb-4 }
