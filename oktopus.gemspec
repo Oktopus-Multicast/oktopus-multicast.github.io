@@ -3,11 +3,12 @@
 Gem::Specification.new do |spec|
   spec.name          = "oktopus"
   spec.version       = "0.1"
-  spec.authors       = ["Carlos"]
-  spec.email         = ["carlosl@sfu.ca"]
+  spec.authors       = ["Khaled Diab", "Carlos Lee"]
+  spec.email         = ["kdiab@sfu.ca", "carlosl@sfu.ca"]
 
   spec.summary       = %q{Oktopus documention.}
   spec.homepage      = "https://github.com/oktopus-multicast/oktopus_site"
+  spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|bin|_layouts|_includes|lib|Rakefile|_sass|LICENSE|README)}i) }
   spec.executables   << 'oktopus'
