@@ -10,10 +10,9 @@ nav_order: 1
 The Application API allows the operator to control different aspects of an application such as topology, services, session, routing, and solution.
 {: .pb-2}
 
-```python
-add_sessions(sessions)
-```
 
+### add_sessions(sessions)
+{: .doc-api}
 Add application sessions. 
 
 * **Parameters** 
@@ -22,9 +21,7 @@ Add application sessions.
 {: .pb-2}
 
 
-```python
-get_link(src, dst)
-```
+## get_link(src, dst)
 
 Get network given the connected network nodes.
 
@@ -50,9 +47,7 @@ Get network given the connected network nodes.
     Link
 {: .pb-2}
 
-```python
-get_links()
-```
+## get_links()
 
 Get network links.
 
@@ -68,9 +63,7 @@ Get network links.
     Link
 {: .pb-2}
 
-```python
-get_node(node_id)
-```
+## get_node(node_id)
 
 Get network node object give the ID.
 
@@ -92,9 +85,7 @@ Get network node object give the ID.
     Node
 {: .pb-2}
 
-```python
-get_nodes()
-```
+## get_nodes()
 
 Get network nodes.
 
@@ -110,9 +101,7 @@ Get network nodes.
     Node
 {: .pb-2}
 
-```python
-get_nodes_by_service(srv_name)
-```
+## get_nodes_by_service(srv_name)
 
 Get network nodes containing the given network service.
 
@@ -134,9 +123,7 @@ Get network nodes containing the given network service.
     list
 {: .pb-2}
 
-```python
-get_nodes_ids_by_service(srv_name)
-```
+## get_nodes_ids_by_service(srv_name)
 
 Get network nodes IDs containing the given network service.
 
@@ -158,9 +145,7 @@ Get network nodes IDs containing the given network service.
     list
 {: .pb-2}
 
-```python
-get_session(addr)
-```
+## get_session(addr)
 
 Get an application session given the session address.
 
@@ -182,9 +167,7 @@ Get an application session given the session address.
     Session
 {: .pb-2}
 
-```python
-get_sessions()
-```
+## get_sessions()
 
 Get application sessions.
 
@@ -196,16 +179,13 @@ Get application sessions.
     list
 {: .pb-2}
 
-```python
-print_services()
-```
+## print_services()
 
 Print network services deployed on the network.
 {: .pb-2}
 
-```python
-set_routes(routes)
-```
+
+## set_routes(routes)
 
 Set the Routing object to the application.
 
@@ -217,9 +197,7 @@ The Routing object is used to define routing costs, constraints and objectives o
     * **routes** (*Routing*) – The Routing object.
 {: .pb-2}
 
-```python
-solve(algorithm='oktopus', **kwargs)
-```
+## solve(algorithm='oktopus', **kwargs)
 
 Run the specified algorithm to solve the application.
 

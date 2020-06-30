@@ -52,8 +52,13 @@ app.solve() # produces a solution
 A multicast application example using {{site.title}} API.
 {: .text-center .pb-2}
 
-In the network application, the operator specifies per-session requirements and network-wide constraints and objectives by utilizing three sets of APIs: Application, Session, and Routing.
+In the network application, the operator specifies per-session requirements and network-wide constraints and objectives by utilizing three sets of APIs: 
+
+* [Application API](#application-api)
+* [Session API](#session-api)
+* [Routing API](#routing-api)
 {: .pb-4 }
+
 
 #### **Application API**
 
