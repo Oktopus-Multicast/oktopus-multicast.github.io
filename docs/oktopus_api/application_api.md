@@ -21,8 +21,8 @@ Add application sessions.
 {: .pb-2}
 
 
-## get_link(src, dst)
-
+### get_link(src, dst)
+{: .doc-api}
 Get network given the connected network nodes.
 
 
@@ -47,8 +47,8 @@ Get network given the connected network nodes.
     Link
 {: .pb-2}
 
-## get_links()
-
+### get_links()
+{: .doc-api}
 Get network links.
 
 
@@ -63,8 +63,8 @@ Get network links.
     Link
 {: .pb-2}
 
-## get_node(node_id)
-
+### get_node(node_id)
+{: .doc-api}
 Get network node object give the ID.
 
 
@@ -85,8 +85,8 @@ Get network node object give the ID.
     Node
 {: .pb-2}
 
-## get_nodes()
-
+### get_nodes()
+{: .doc-api}
 Get network nodes.
 
 
@@ -101,8 +101,8 @@ Get network nodes.
     Node
 {: .pb-2}
 
-## get_nodes_by_service(srv_name)
-
+### get_nodes_by_service(srv_name)
+{: .doc-api}
 Get network nodes containing the given network service.
 
 
@@ -123,8 +123,8 @@ Get network nodes containing the given network service.
     list
 {: .pb-2}
 
-## get_nodes_ids_by_service(srv_name)
-
+### get_nodes_ids_by_service(srv_name)
+{: .doc-api}
 Get network nodes IDs containing the given network service.
 
 
@@ -145,8 +145,8 @@ Get network nodes IDs containing the given network service.
     list
 {: .pb-2}
 
-## get_session(addr)
-
+### get_session(addr)
+{: .doc-api}
 Get an application session given the session address.
 
 
@@ -167,8 +167,8 @@ Get an application session given the session address.
     Session
 {: .pb-2}
 
-## get_sessions()
-
+### get_sessions()
+{: .doc-api}
 Get application sessions.
 
 
@@ -179,14 +179,14 @@ Get application sessions.
     list
 {: .pb-2}
 
-## print_services()
-
+### print_services()
+{: .doc-api}
 Print network services deployed on the network.
 {: .pb-2}
 
 
-## set_routes(routes)
-
+### set_routes(routes)
+{: .doc-api}
 Set the Routing object to the application.
 
 The Routing object is used to define routing costs, constraints and objectives of the application.
@@ -197,8 +197,8 @@ The Routing object is used to define routing costs, constraints and objectives o
     * **routes** (*Routing*) – The Routing object.
 {: .pb-2}
 
-## solve(algorithm='oktopus', **kwargs)
-
+### solve(algorithm='oktopus', **kwargs)
+{: .doc-api}
 Run the specified algorithm to solve the application.
 
 
