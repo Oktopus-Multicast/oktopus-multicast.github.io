@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["carlosl@sfu.ca"]
 
   spec.summary       = %q{Oktopus documention.}
-  spec.homepage      = "https://github.com/charlee593/oktopus_doc"
+  spec.homepage      = "https://github.com/oktopus-multicast/oktopus_site"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|bin|_layouts|_includes|lib|Rakefile|_sass|LICENSE|README)}i) }
   spec.executables   << 'oktopus'
