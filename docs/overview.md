@@ -159,5 +159,5 @@ An example using the Routing API.
 
 ---
 
-[Getting Started]({{ site.baseurl }}{% link docs/getting_started.md %}){: .btn .btn-outline .btn-right}
+[Walkthrough Tutorial]({{ site.baseurl }}{% link docs/walkthrough_tutorial.md %}){: .btn .btn-outline .btn-right}
 {: .pb-4 }
