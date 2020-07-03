@@ -122,5 +122,6 @@ docker run --rm -it -v="$PWD:/home" charlee593/oktopus python example.py
 
 ---
 
-[Oktopus API]({{ site.baseurl }}{% link docs/oktopus_api/oktopus_api.md %}){: .btn .btn-outline .btn-right}
+[⇦ Overview]({{ site.baseurl }}{% link docs/overview.md %}){: .btn .btn-outline .btn-left}
+[Oktopus API ⇨]({{ site.baseurl }}{% link docs/oktopus_api/oktopus_api.md %}){: .btn .btn-outline .btn-right}
 {: .pb-4 }

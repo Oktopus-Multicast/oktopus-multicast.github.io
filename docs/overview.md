@@ -106,16 +106,16 @@ An example using the Session API.
 {: .text-center .pb-2}
 
 Session API provides additional three APIs to define constraints and requirements. The function `addConstraint(name, val)` limits the maximum `name` value of the tree to `val`. Currently, Session API supports limiting the `delay` per session, which is useful to control per-session routing constraints. For example, the network operator may choose to limit the maximum allowed delay to 30 msec for the session shown on the piece of code above. 
-For per-session traffic isolation and steering and service chaining, {Session API exposes the functions `avoid` and `traverse`, respectively. In example code, the session should avoid node `n1` and traverse two services: firewall and video transcoder.
+For per-session traffic isolation and steering and service chaining, Session API exposes the functions `avoid` and `traverse`, respectively. In example code, the session should avoid node `n1` and traverse two services: firewall and video transcoder.
 
-[Head over Session API section for more detail](another-page).
+[Head over Session API section for more detail]({{ site.baseurl }}{% link docs/oktopus_api/session_api.md %}).
 {: .pb-4 }
 
 #### **Routing API**
 
 The operator uses this API by creating and modifying a routing object. Unlike the Session API, the Routing API defines node and link constraints and network-wide objectives. Moreover, it allows the operator to change how {{site.title}} calculates costs and consumes network resources by implementing cost and usage functions. 
 
-The following piece of code illustrates a typical usage for the Routing API. First, the operator defines a custom functions: `cpuCostFn` and `cpuUsageFn` to modify the cost and consumption behavior of CPU resources at all services. Note that {{site.title}} algorithm allows different functions for different services, nodes and links. Then, the application adds a constraint for each link to limit the maximum bandwidth to 10^{9} bit per second (bps). It also adds a constraint for every firewall and video transcoder to limit their CPU load by 90% and 70%, respectively. The network objective in this example is to minimize the routing cost.
+The following piece of code illustrates a typical usage for the Routing API. First, the operator defines a custom functions: `cpuCostFn` and `cpuUsageFn` to modify the cost and consumption behavior of CPU resources at all services. Note that {{site.title}} algorithm allows different functions for different services, nodes and links. Then, the application adds a constraint for each link to limit the maximum bandwidth to 10<sup>9</sup> bit per second (bps). It also adds a constraint for every firewall and video transcoder to limit their CPU load by 90% and 70%, respectively. The network objective in this example is to minimize the routing cost.
 
 
 ```python
@@ -154,10 +154,10 @@ app.setRoutes(r)
 An example using the Routing API.
 {: .text-center .pb-2}
 
-[Head over Routing API section for more detail](another-page).
+[Head over Routing API section for more detail]({{ site.baseurl }}{% link docs/oktopus_api/routing_api.md %}).
 {: .pb-4 }
 
 ---
 
-[Walkthrough Tutorial]({{ site.baseurl }}{% link docs/walkthrough_tutorial.md %}){: .btn .btn-outline .btn-right}
+[Walkthrough Tutorial ⇨]({{ site.baseurl }}{% link docs/walkthrough_tutorial.md %}){: .btn .btn-outline .btn-right}
 {: .pb-4 }
