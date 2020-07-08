@@ -60,7 +60,7 @@ Get network links.
 
 * **Return type**
 
-    Link
+    List
 {: .pb-2}
 
 ### get_node(node_id)
@@ -98,7 +98,7 @@ Get network nodes.
 
 * **Return type**
 
-    Node
+    List
 {: .pb-2}
 
 ### get_nodes_by_service(srv_name)
