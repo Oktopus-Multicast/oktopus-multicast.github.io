@@ -22,8 +22,7 @@ Add constraint such as load, delay and hops constraints to the session requireme
 
 
     * **value** (*int** or **float*) – Constraint value.
-
-
+{: .pb-2}
 
 ### avoid_links(links)
 {: .doc-api}
@@ -33,8 +32,7 @@ Specify network links to avoid for the session.
 * **Parameters**
 
   * **links** (*list*) – List of network links.
-
-
+{: .pb-2}
 
 ### avoid_nodes(nodes)
 {: .doc-api}
@@ -44,8 +42,7 @@ Specify network nodes to avoid for the session.
 * **Parameters**
 
   * **nodes** (*list*) – List of network nodes.
-
-
+{: .pb-2}
 
 ### avoid_sessions(sessions)
 {: .doc-api}
@@ -55,6 +52,7 @@ Specify session to avoid for the session.
 * **Parameters**
 
    * **sessions** (*list*) – List of network sessions.
+{: .pb-2}
 
 ### mod_resource_req(srv_name, res_name, value)
 {: .doc-api}
@@ -73,8 +71,7 @@ Add or update the resource consumption requirement of the session.
 
 
     * **value** (*int*) – The value of the the resource.
-
-
+{: .pb-2}
 
 ### pass_through(nodes)
 {: .doc-api}
@@ -84,13 +81,13 @@ Specify network nodes requires to pass through for the session.
 * **Parameters**
 
   * **nodes** (*list*) – List of network nodes.
-
+{: .pb-2}
 
 
 ### print_constraints()
 {: .doc-api}
 Print the constraints and requirements of the session.
-
+{: .pb-2}
 
 ### traverse(services)
 {: .doc-api}
