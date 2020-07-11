@@ -29,7 +29,7 @@ Add network link constraint.
 
 
     * **value** (*int*) – The value of the constraint.
-
+{: .pb-2}
 
 
 ### add_link_cost_fn(link, fn)
@@ -44,7 +44,7 @@ Add custom link cost function.
 
 
     * **fn** (*function*) – The custom link cost function.
-
+{: .pb-2}
 
 
 ### add_link_usage_fn(link, fn)
@@ -59,7 +59,7 @@ Add custom link usage function.
 
 
     * **fn** (*function*) – The custom link usage function.
-
+{: .pb-2}
 
 
 ### add_node_constraint(node, srv, name, value)
@@ -80,10 +80,11 @@ Add network node constraint.
 
 
     * **value** (*int*) – The value of the constraint.
-
+{: .pb-2}
 
 
 #### add_node_cost_fn(node, srv, name, fn)
+{: .doc-api}
 Add custom node cost function.
 
 
@@ -100,7 +101,7 @@ Add custom node cost function.
 
 
     * **fn** (*function*) – The custom node cost function.
-
+{: .pb-2}
 
 
 ### add_node_usage_fn(node, srv, name, fn)
@@ -121,7 +122,7 @@ Add custom node usage function.
 
 
     * **fn** (*function*) – The custom node usage function.
-
+{: .pb-2}
 
 
 ### add_objective(name)
