@@ -1,7 +1,7 @@
 <p align="center">
     <h1 align="center">Oktopus Documentation Site</h1>
     <p align="center">This is the repository of the  Oktopus Documentation Site.
-    <p align="center"><strong><a href="https://oktopus-multicast.github.io/oktopus_site/">Public link to the site.</a></strong></p>
+    <p align="center"><strong><a href="https://oktopus-project.org/">Public link to the site.</a></strong></p>
     <br>
 </p>
 
