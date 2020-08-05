@@ -31,6 +31,20 @@
   }
 }
 
+.button.green {
+  background: green;
+  &:hover {
+    background-color: lighten(green, 10%);
+  }
+}
+
+.button.yellow {
+  background: yellow;
+  &:hover {
+    background-color: lighten(yellow, 10%);
+  }
+}
+
 .button.grey {
   background: gray;
   &:hover {
