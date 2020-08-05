@@ -13,13 +13,13 @@ Please follow these instructions to reproduce the results.
 
 Please download and uncompress the following files:
 
-* Paper Dataset: https://sfuca0-my.sharepoint.com/:u:/g/personal/carlosl_sfu_ca/EesKyEwBKIJDq9kq9w2mY00BMmq_ZFGSvkl8mfhyHccuuQ?e=1gSQj1
-* Full Dataset: https://sfuca0-my.sharepoint.com/:u:/g/personal/carlosl_sfu_ca/ES9DrdXF0iBMoYTxJ_rnlisBtigvdK96coQFILf5tcU23Q?e=f4hkwt
+* Paper Dataset: [Download](https://nsl.cs.sfu.ca/projects/oktopus/paper_dataset_input_output.tar.gz)
+* Full Dataset: [Download](https://nsl.cs.sfu.ca/projects/oktopus/full_dataset_input.tar.gz)
  
- The paper dataset contains the inputs and outputs of the experiments mentioned in the paper, while the full dataset contains only the inputs of all the experiments. 
- Notice that the paper dataset is a representative sample of the full dataset.
+ The *paper dataset* file contains the inputs and outputs of the experiments mentioned in the paper, while the *full dataset* file contains the inputs of all the experiments. 
+ Notice that the *paper dataset* is a representative sample of the *full dataset*.
 
- The file structure of the paper dataset file is:
+ The file structure of the *paper dataset* file is:
 
  ```
  -paper_dataset_input_output
