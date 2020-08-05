@@ -1,26 +1,17 @@
 ---
 title: Reproducing Results
-layout: default
+layout: page
 nav_exclude: true
 search_exclude: true
 ---
 
-<div class="intro">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        # Reproducing Results
+
+# Reproducing Results
         
-      </div>
-    </div>
-  </div>
-</div>
 
 
 
-<div class="container pb-6">
-  <div class="row">
-    Please follow these instructions to reproduce the results.
+Please follow these instructions to reproduce the results.
 
 1. Download and uncompress the dataset:
   
@@ -100,25 +91,17 @@ topology_zoo - Internet Topology Zoo dataset
 2. For convenience, we set up an Oktopus docker to run the experiment  
 
 Get the docker:
-      <pre>
-      <code>
-        docker pull charlee593/oktopus
-      </code>
-      </pre>
+```
+docker pull charlee593/oktopus
+```
       
 To run the paper dataset:
-      <pre>
-      <code>
-    docker run --rm -it -v="$PWD:/home" okevaluation run_sfc  -o paper_dataset_input_output/paper_dataset --topology=paper_dataset_input_output/topology_zoo/
-       </code>
-      </pre>
+```
+docker run --rm -it -v="$PWD:/home" okevaluation run_sfc  -o paper_dataset_input_output/paper_dataset --topology=paper_dataset_input_output/topology_zoo/
+```
       
 To run the full dataset:
-      <pre>
-      <code>
-        docker run --rm -it -v="$PWD:/home" okevaluation run_sfc  -o full_dataset_input/full_dataset --topology=full_dataset_input/topology_zoo/
-      </code>
-      </pre>
-    </div>
-</div>
+```
+docker run --rm -it -v="$PWD:/home" okevaluation run_sfc  -o full_dataset_input/full_dataset --topology=full_dataset_input/topology_zoo/
+```
 
