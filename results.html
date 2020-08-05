@@ -5,10 +5,19 @@ nav_exclude: true
 search_exclude: true
 ---
 
-<h1>Reproducing Results</h1>
+<div class="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Reproducing Results</h1>
+      </div>
+    </div>
+  </div>
+</div>
 
-
-    Instructions for running the experiment.
+<div class="container pb-6">
+  <div class="row">
+    Please follow these instructions to reproduce the results.
 
 1. Download and uncompress the dataset:
   
@@ -18,8 +27,10 @@ https://sfuca0-my.sharepoint.com/:u:/g/personal/carlosl_sfu_ca/EesKyEwBKIJDq9kq9
 Full Dataset:
 https://sfuca0-my.sharepoint.com/:u:/g/personal/carlosl_sfu_ca/ES9DrdXF0iBMoYTxJ_rnlisBtigvdK96coQFILf5tcU23Q?e=f4hkwt
 
-The paper dataset contains the input and output of the experiment, while the full dataset contains only the input of the experiment. The paper dataset is a representative sample of the full dataset, in which we set the parameters that we wish to observe while the other parameters vary.
+The paper dataset contains the inputs and outputs of the experiments mentioned in the paper, while the full dataset contains only the inputs of all the experiments. 
+      Notice that the paper dataset is a representative sample of the full dataset.
 
+      <!--
 For the experiment where we wish to observe the effect of the number of sessions, the dataset is set in the following:
 
 Number of sessions: [1000, 1500, 2000, 3000, 4000]
@@ -71,7 +82,8 @@ Percentage of sessions with services: 100%
 Order Type:  1 (partial)
 Receivers Percentage: random([(0.1, .1), (0.2, .2), (0.3, .3), (0.4, .4)])
 Bandwidth demand : random([(2000000, .21), (7200000, .57), (18000000, .22)]) 
-
+-->
+      
 Paper dataset file structure:
 -paper_dataset_input_output
     |-paper_dataset
@@ -85,12 +97,25 @@ topology_zoo - Internet Topology Zoo dataset
 2. For convenience, we set up an Oktopus docker to run the experiment  
 
 Get the docker:
-docker pull charlee593/oktopus
-
+      <pre>
+      <code>
+        docker pull charlee593/oktopus
+      </pre>
+      </code>
+      
 To run the paper dataset:
-docker run --rm -it -v="$PWD:/home" okevaluation run_sfc  -o paper_dataset_input_output/paper_dataset --topology=paper_dataset_input_output/topology_zoo/
-
+      <pre>
+      <code>
+    docker run --rm -it -v="$PWD:/home" okevaluation run_sfc  -o paper_dataset_input_output/paper_dataset --topology=paper_dataset_input_output/topology_zoo/
+       </code>
+      </pre>
+      
 To run the full dataset:
-docker run --rm -it -v="$PWD:/home" okevaluation run_sfc  -o full_dataset_input/full_dataset --topology=full_dataset_input/topology_zoo/
-
+      <pre>
+      <code>
+        docker run --rm -it -v="$PWD:/home" okevaluation run_sfc  -o full_dataset_input/full_dataset --topology=full_dataset_input/topology_zoo/
+      </code>
+      </pre>
+    </div>
+</div>
 
