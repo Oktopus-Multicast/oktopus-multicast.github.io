@@ -71,6 +71,18 @@
   }
 }
 
+.main-content-page {
+  @include mq(md) {
+    position: relative;
+    max-width: $content-width;
+    margin-left: 50px;
+  }
+
+  @include mq(lg) {
+    margin-left: 50px;
+  }
+}
+
 .js-main-content:focus {
   outline: none;
 }
