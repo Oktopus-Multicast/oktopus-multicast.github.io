@@ -3,7 +3,7 @@ layout: default
 ---
 
   <div class="main-content-wrap" tabindex="0">
-    <div class="main-content js-main-content">
+    <!--<div class="main-content js-main-content">-->
       <div class="page">
         {% unless page.url == "/" %}
           {% if page.parent %}
@@ -26,8 +26,9 @@ layout: default
           {% else %}
             {{ content }}
           {% endif %}
-
-      </div>
+        </div>
+    </div>
+      <!--</div>-->
     </div>
 
 <!-- {{content}} -->
