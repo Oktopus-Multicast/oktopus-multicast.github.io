@@ -5,15 +5,11 @@ nav_exclude: true
 search_exclude: true
 ---
 
-
 # Reproducing Results
-        
-
-
 
 Please follow these instructions to reproduce the results.
 
-1. Download and uncompress the dataset:
+## Download and uncompress the dataset:
   
  Paper Dataset: https://sfuca0-my.sharepoint.com/:u:/g/personal/carlosl_sfu_ca/EesKyEwBKIJDq9kq9w2mY00BMmq_ZFGSvkl8mfhyHccuuQ?e=1gSQj1
 
@@ -38,20 +34,22 @@ Please follow these instructions to reproduce the results.
  
  topology_zoo - Internet Topology Zoo dataset
 
-2. For convenience, we set up an Oktopus docker to run the experiment  
+## For convenience, we set up an Oktopus docker to run the experiment  
 
-⋅⋅⋅Get the docker:
+Get the docker:
 ```
 docker pull charlee593/oktopus
 ```
       
-⋅⋅⋅To run the paper dataset:
+To run the paper dataset:
 ```
-docker run --rm -it -v="$PWD:/home" okevaluation run_sfc  -o paper_dataset_input_output/paper_dataset --topology=paper_dataset_input_output/topology_zoo/
+docker run --rm -it -v="$PWD:/home" okevaluation run_sfc  -o paper_dataset_input_output/paper_dataset\ 
+--topology=paper_dataset_input_output/topology_zoo/
 ```
       
-⋅⋅⋅To run the full dataset:
+To run the full dataset:
 ```
-docker run --rm -it -v="$PWD:/home" okevaluation run_sfc  -o full_dataset_input/full_dataset --topology=full_dataset_input/topology_zoo/
+docker run --rm -it -v="$PWD:/home" okevaluation run_sfc  -o full_dataset_input/full_dataset\ 
+--topology=full_dataset_input/topology_zoo/
 ```
 
