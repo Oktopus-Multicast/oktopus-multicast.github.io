@@ -80,7 +80,7 @@
 
   @include mq(lg) {
     margin-left: calc(
-      (100% - #{$nav-width-page + $content-width}) / 4 + #{$nav-width-page}
+      (100% - #{$nav-width-page + $content-width}) / 2 + #{$nav-width-page}
     );
   }
 }
