@@ -75,11 +75,13 @@
   @include mq(md) {
     position: relative;
     max-width: $content-width;
-    margin-left: 50px;
+    margin-left: $nav-width-page;
   }
 
   @include mq(lg) {
-    margin-left: 50px;
+    margin-left: calc(
+      (100% - #{$nav-width-page + $content-width}) / 2 + #{$nav-width-page}
+    );
   }
 }
 
