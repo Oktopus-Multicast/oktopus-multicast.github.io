@@ -5,18 +5,9 @@ nav_exclude: true
 search_exclude: true
 ---
 
-<div class="intro">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h1>Reproducing Results</h1>
-      </div>
-    </div>
-  </div>
-</div>
+<h1>Reproducing Results</h1>
 
-<div class="container pb-6">
-  <div class="row">
+
     Instructions for running the experiment.
 
 1. Download and uncompress the dataset:
@@ -101,5 +92,5 @@ docker run --rm -it -v="$PWD:/home" okevaluation run_sfc  -o paper_dataset_input
 
 To run the full dataset:
 docker run --rm -it -v="$PWD:/home" okevaluation run_sfc  -o full_dataset_input/full_dataset --topology=full_dataset_input/topology_zoo/
-  </div>
-</div>
+
+
